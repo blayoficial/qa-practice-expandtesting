@@ -67,32 +67,86 @@ beforeEach(() => {
     cy.visit('https://practice.expandtesting.com/form-validation')
 });
 
-it('009 - Envio com campos vazios ', () => {
-    cy.get('#validationCustom01').clear()
-    cy.get('#validationCustom05').clear()
-    cy.get('.btn.btn-primary').click()
-    cy.contains('Please enter your Contact name.').should('be.visible')
-    cy.contains('Please provide your Contact number.').should('be.visible')
-    cy.contains('Please provide valid Date.').should('be.visible')
-    cy.contains('Please select the Paymeny Method.').should('be.visible') //| Passou | 
-});
+    it('009 - Envio com campos vazios ', () => {
+        cy.get('#validationCustom01').clear()
+        cy.get('#validationCustom05').clear()
+        cy.get('.btn.btn-primary').click()
+        cy.contains('Please enter your Contact name.').should('be.visible')
+        cy.contains('Please provide your Contact number.').should('be.visible')
+        cy.contains('Please provide valid Date.').should('be.visible')
+        cy.contains('Please select the Paymeny Method.').should('be.visible') //| Passou | 
+    });
 
-it('010 - Envio com dados válidos ', () => {
-    cy.get('#validationCustom01').clear().type('Blay')
-    cy.get('#validationCustom05').clear().type('013-3456789')
-    cy.get('[name="pickupdate"]').clear().type('1212-02-12')
-    cy.get('#validationCustom04').select('card')
-    cy.contains(' Register ').click()
-    cy.contains('Thank you for validating your ticket').should('be.visible')//| Passou |  
-});
+    it('010 - Envio com dados válidos ', () => {
+        cy.get('#validationCustom01').clear().type('Blay')
+        cy.get('#validationCustom05').clear().type('013-3456789')
+        cy.get('[name="pickupdate"]').clear().type('1212-02-12')
+        cy.get('#validationCustom04').select('card')
+        cy.contains(' Register ').click()
+        cy.contains('Thank you for validating your ticket').should('be.visible')//| Passou |  
+    });
 
-it('011 - Validação de campo obrigatório/número inválido ', () => {
-      cy.get('#validationCustom01').clear().type('Blay')
-    cy.get('#validationCustom05').clear().type('0131-3456789')
-    cy.get('[name="pickupdate"]').clear().type('1212-02-12')
-    cy.get('#validationCustom04').select('card')
-    cy.contains(' Register ').click()
-    cy.contains('Please provide your Contact number.').should('be.visible')
-});
-    
+    it('011 - Validação de campo obrigatório/número inválido ', () => {
+        cy.get('#validationCustom01').clear().type('Blay')
+        cy.get('#validationCustom05').type('013-34567')
+        cy.get('[name="pickupdate"]').type('1212-02-12')
+        cy.get('#validationCustom04').select('card')
+        cy.contains(' Register ').click()
+        cy.contains('Please provide your Contact number.').should('be.visible')
+    });
+    it('012 - Número de contato vazio', () => {
+        cy.get('#validationCustom01').clear().type('Blay')
+        cy.get('#validationCustom05').clear()
+        cy.get('[name="pickupdate"]').clear().type('1212-02-12')
+        cy.get('#validationCustom04').select('card')
+        cy.contains(' Register ').click()
+        cy.contains('Please provide your Contact number.').should('be.visible')  
+    });
+    it('013 - Número de contato com menos dígitos', () => {
+        cy.get('#validationCustom01').clear().type('Blay')
+        cy.get('#validationCustom05').type('012-34567') //2 digitos a menos
+        cy.get('[name="pickupdate"]').clear().type('1212-02-12')
+        cy.get('#validationCustom04').select('card')
+        cy.contains(' Register ').click()
+        cy.contains('Please provide your Contact number.').should('be.visible') 
+    });
+    it('014 - Número de contato com letras ou caracteres especiais', () => {
+        cy.get('#validationCustom01').clear().type('Blay')
+        cy.get('#validationCustom05').type('012-345678@!')
+        cy.get('[name="pickupdate"]').clear().type('1212-02-12')
+        cy.get('#validationCustom04').select('card')
+        cy.contains(' Register ').click()
+        cy.contains('Please provide your Contact number.').should('be.visible') 
+    });
+    it('015 - Data de retirada em formato inválido', () => {
+        cy.get('#validationCustom01').clear().type('Blay')
+        cy.get('#validationCustom05').type('012-3456789')
+        cy.get('[name="pickupdate"]').clear().type('12-12-123123123123') //Durante os testes manuais foi identificado que o sistema
+                                                                         //aceita datas numericamente válidas, porém incomuns, sem 
+                                                                         //realizar validação de plausibilidade, o que pode gerar inconsistência de dados no sistema.
+                                                                         //EM RESUMO NA AUTOMACAO DA ERRO DE CODICO PORQUE O SITE NAO ACEITA , AGORA QUANDO VOCE VAI TENTAR MANUALMENTE ELE PERMITE QUALQUER DATA INCOMUM
+    });
+   it('016 -  Método de pagamento não selecionado', () => {
+        cy.get('#validationCustom01').clear().type('Blay')
+        cy.get('#validationCustom05').type('012-3456789')
+        cy.get('[name="pickupdate"]').clear().type('1212-02-12')
+        cy.contains(' Register ').click()
+        cy.contains('Please select the Paymeny Method.').should('be.visible') 
+   });
+   it('017 - Preenchimento correto de todos os campos', () => {
+        cy.get('#validationCustom01').clear().type('Blay')
+        cy.get('#validationCustom05').clear().type('012-3456789')
+        cy.get('[name="pickupdate"]').clear().type('1212-02-12')
+        cy.get('#validationCustom04').select('card')
+        cy.contains(' Register ').click()
+        cy.contains('Thank you for validating your ticket').should('be.visible')
+   });
+   it('018 - Teste de limite de caracteres no nome', () => {
+    cy.get('#validationCustom01').clear().type('Blay@#$##@@!:')
+        cy.get('#validationCustom05').clear().type('012-3456789')
+        cy.get('[name="pickupdate"]').clear().type('1212-02-12')
+        cy.get('#validationCustom04').select('card')
+        cy.contains(' Register ').click()
+        cy.contains('Thank you for validating your ticket').should('be.visible')
+   });
 });
