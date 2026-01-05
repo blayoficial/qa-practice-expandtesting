@@ -18,7 +18,7 @@ RESULTADO ESPERADO:
 RESULTADO OBTIDO:
 Login realizado com sucesso: You logged into a secure area!
 
-print:![](001.png)
+![Login com credenciais válidas](prints/001.png)
 
 
 
