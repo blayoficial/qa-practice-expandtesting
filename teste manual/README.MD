@@ -1,23 +1,24 @@
-CASOS DE TESTE MANUAIS
-(ID 001) – LOGIN COM AS CREDENCIAIS VÁLIDAS
+##CASOS DE TESTE MANUAIS
+###(ID 001) – LOGIN COM AS CREDENCIAIS VÁLIDAS
 
-PASSOS:
+###PASSOS:
 1 - Acessar a página de login https://practice.expandtesting.com/login
 2 - Informar usuário válido
 3 - Informar senha válida
 4 - Clicar em "Login"
 
-DADOS DE TESTE:
+###DADOS DE TESTE:
 1 - Username: practice
 2 - Password: SuperSecretPassword!
 
-RESULTADO ESPERADO:
+###RESULTADO ESPERADO:
 1 - Usuário é autenticado com sucesso
 2 - Sistema redireciona para a página inicial
 
-RESULTADO OBTIDO:
+###RESULTADO OBTIDO:
 Login realizado com sucesso: You logged into a secure area!
 
+###PRINT
 ![Login com credenciais válidas](prints/001.png)
 
 
