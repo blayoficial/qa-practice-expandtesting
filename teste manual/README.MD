@@ -2,10 +2,10 @@
 ### (ID 001) – LOGIN COM AS CREDENCIAIS VÁLIDAS
 
 ### PASSOS:
-1 - Acessar a página de login https://practice.expandtesting.com/login
-2 - Informar usuário válido
-3 - Informar senha válida
-4 - Clicar em "Login"
+ - Acessar a página de login https://practice.expandtesting.com/login
+ - Informar usuário válido
+ - Informar senha válida
+ - Clicar em "Login"
 
 ### DADOS DE TESTE:
 1 - Username: practice
