@@ -4,14 +4,14 @@ beforeEach(() => {
 });
 
 
-    it.only('001 - Deve realizar login com credenciais válidas', () => {
+    it('001 - Deve realizar login com credenciais válidas', () => {
         cy.get('#username').type('practice'); 
         cy.get('#password').type('SuperSecretPassword!'); 
         cy.get('button[type="submit"]').click();
         cy.contains('You logged into a secure area!').should('be.visible') //| Passou |
     });
 
-    it('002 - login com senha invalida', () => {
+    it.only('002 - login com senha invalida', () => {
         cy.get('#username').type('practice'); 
         cy.get('#password').type('SuperSecretPassword'); // sem colocar ! no final
         cy.get('button[type="submit"]').click();
