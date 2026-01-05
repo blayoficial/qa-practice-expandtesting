@@ -47,7 +47,7 @@ beforeEach(() => {
         cy.contains('Your username is invalid!').should('be.visible')//| Passou |     
     });
 
-    it.only('007 - Logout do sistema', () => {
+    it('007 - Logout do sistema', () => {
         cy.get('#username').type('practice'); 
         cy.get('#password').type('SuperSecretPassword!'); 
         cy.get('button[type="submit"]').click();
