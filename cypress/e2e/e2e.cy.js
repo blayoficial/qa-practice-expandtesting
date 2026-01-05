@@ -77,7 +77,7 @@ beforeEach(() => {
         cy.contains('Please select the Paymeny Method.').should('be.visible') //| Passou | 
     });
 
-    it.only('010 - Envio com dados válidos ', () => {
+    it('010 - Envio com dados válidos ', () => {
         cy.get('#validationCustom01').clear().type('Blay')
         cy.get('#validationCustom05').clear().type('013-3456789')
         cy.get('[name="pickupdate"]').clear().type('1212-02-12')
@@ -141,7 +141,7 @@ beforeEach(() => {
         cy.contains(' Register ').click()
         cy.contains('Thank you for validating your ticket').should('be.visible')
    });
-   it('018 - Teste de limite de caracteres no nome', () => {
+   it.only('018 - Teste de limite de caracteres no nome', () => {
     cy.get('#validationCustom01').clear().type('Blay@#$##@@!:')
         cy.get('#validationCustom05').clear().type('012-3456789')
         cy.get('[name="pickupdate"]').clear().type('1212-02-12')
