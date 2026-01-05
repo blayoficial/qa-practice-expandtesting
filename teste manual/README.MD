@@ -8,15 +8,15 @@
  - Clicar em "Login"
 
 ### DADOS DE TESTE:
-1  - Username: practice
-2  - Password: SuperSecretPassword!
+- Username: practice
+- Password: SuperSecretPassword!
 
 ### RESULTADO ESPERADO:
-1 - Usuário é autenticado com sucesso
-2 - Sistema redireciona para a página inicial
+ - Usuário é autenticado com sucesso
+ - Sistema redireciona para a página inicial
 
 ### RESULTADO OBTIDO:
-Login realizado com sucesso: You logged into a secure area!
+- Login realizado com sucesso: You logged into a secure area!
 
 ### PRINT
 ![Login com credenciais válidas](prints/001.png)
