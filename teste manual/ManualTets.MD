@@ -114,7 +114,7 @@ Login realizado com sucesso: You logged into a secure area!
 ### EVIDENCIA:
 ![](prints/008.png)
                             
-##(ID 009) - Envio com campos vazios
+## (ID 009) - Envio com campos vazios
 
 ### PASSOS 
 - Acessar a pagina de Formulario https://practice.expandtesting.com/form-validation
@@ -122,6 +122,7 @@ Login realizado com sucesso: You logged into a secure area!
 - Informar o Contact number: Vazio
 - Informar o PickUp Date: Vazio
 - Informar o Payment Method: Vazio
+- Click em Register
 
 ### RESULTADO ESPERADO:
 - Mensagem de erro exibida: Please enter your Contact name. , Please provide your Contact number. , Please provide valid Date. , Please select the Paymeny Method. 
@@ -129,7 +130,19 @@ Login realizado com sucesso: You logged into a secure area!
 ### EVIDENCIA:
 ![](prints/009.png)
 
+## (ID 010) - Envio com dados válidos
 
+### PASSOS
+- Acessar a pagina de Formulario https://practice.expandtesting.com/form-validation
+- Informar o Contact Name :Blay
+- Informar o Contact number: 013-3456789
+- Informar o PickUp Date: 1212-02-12
+- Informar o Payment Method: card
+- Click em Register
 
+### RESULTADO ESPERADO: Thank you for validating your ticket
+
+### EVIDENCIA:
+![](prints/010.png)
 
 
