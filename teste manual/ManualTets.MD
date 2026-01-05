@@ -61,6 +61,59 @@ Login realizado com sucesso: You logged into a secure area!
 ### RESULTADO ESPERADO:
 - Mensagem de erro exibida: Your password is invalid!
 
-### EVIDENCIAS:
+### EVIDENCIA:
 ![](prints/004.png)
+
+## (ID 005) - LOGIN COM USUÁRIO E SENHA VAZIA
+
+### PASSOS:
+- Acessar a página de login https://practice.expandtesting.com/login
+- informar usuário: vazio
+- password: vazio
+
+### RESULTADO ESPERADO:
+- Mensagem de erro exibida: Your username is invalid!
+
+### EVIDENCIA:
+![](prints/005.png)
+
+## (ID 006) - LOGIN COM CARACTERES ESPECIAIS
+
+### PASSOS:
+- Acessar a página de login https://practice.expandtesting.com/login
+- informar usuário: !@#$% 
+- password: ^&*()
+
+### RESULTADO ESPERADO:
+- Mensagem de erro exibida: Your username is invalid!
+
+### EVIDENCIA:
+![](prints/006.png)
+
+## (ID 007) - LOGOUT DO SISTEMA
+
+### PASSOS:
+- Acessar a página de login https://practice.expandtesting.com/login
+- informar usuário: practice 
+- password: SuperSecretPassword!
+
+### RESULTADO ESPERADO:
+- Mensagem de erro exibida: You logged out of the secure area!
+
+### EVIDENCIA:
+![](prints/007.png)
+
+## (ID 008) - ACESSO SEM LOGIN
+
+### PASSOS:
+- Acessar a página de login https://practice.expandtesting.com/secure
+
+### RESULTADO ESPERADO:
+- Mensagem de erro exibida: You must login to view the secure area!
+
+### EVIDENCIA:
+![](prints/008.png)
+
+
+
 
