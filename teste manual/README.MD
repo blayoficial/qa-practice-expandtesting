@@ -1,49 +1,52 @@
-CASOS DE TESTE MANUAIS
-(ID 001) – LOGIN COM AS CREDENCIAIS VÁLIDAS
+## CASOS DE TESTE MANUAIS
+### (ID 001) – LOGIN COM AS CREDENCIAIS VÁLIDAS
 
-PASSOS:
-1 - Acessar a página de login https://practice.expandtesting.com/login
-2 - Informar usuário válido
-3 - Informar senha válida
-4 - Clicar em "Login"
+### PASSOS:
+ - Acessar a página de login https://practice.expandtesting.com/login
+ - Informar usuário válido
+ - Informar senha válida
+ - Clicar em "Login"
 
-DADOS DE TESTE:
-1 - Username: practice
-2 - Password: SuperSecretPassword!
+### DADOS DE TESTE:
+- Username: practice
+- Password: SuperSecretPassword!
 
-RESULTADO ESPERADO:
-1 - Usuário é autenticado com sucesso
-2 - Sistema redireciona para a página inicial
+### RESULTADO ESPERADO:
+ - Usuário é autenticado com sucesso
+ - Sistema redireciona para a página inicial
 
-RESULTADO OBTIDO:
-Login realizado com sucesso: You logged into a secure area!
+### RESULTADO OBTIDO:
+- Login realizado com sucesso: You logged into a secure area!
 
-print:![](001.png)
-
-
-
+### EVIDENCIA
+![Login com credenciais válidas](prints/001.png)
 
 
 
 
-(ID 002) - LOGIN COM SENHA INVÁLIDA
 
-PASSOS:
-1 - Acessar a página de login https://practice.expandtesting.com/login
-2 - Informar usuário válido
-3 - Informar senha inválida
-4 - Clicar em "Login"
 
-DADOS DE TESTE
-1 - Username: practice
-2 - Password: Senha errada
 
-RESULTADO ESPERADO:
-1 - Mensagem de erro exibida: Your password is invalid!
+## (ID 002) - LOGIN COM SENHA INVÁLIDA
 
-(ID 003) - LOGIN COM USUARIO VAZIO
+### PASSOS:
+- Acessar a página de login https://practice.expandtesting.com/login
+- Informar usuário válido
+- Informar senha inválida
+- Clicar em "Login"
 
-PASSOS:
+### DADOS DE TESTE
+- Username: practice
+- Password: Senha errada
+
+### RESULTADO ESPERADO:
+- Mensagem de erro exibida: Your password is invalid!
+
+## (ID 003) - LOGIN COM USUARIO VAZIO
+
+### EVIDENCIA
+![LOGIN COM SENHA INVÁLIDA](prints/002.png)
+##PASSOS:
 1 - Acessar a página de login https://practice.expandtesting.com/login
 2 - Informar usuário: vazio
 2 - Password: SuperSecretPassword!
