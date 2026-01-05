@@ -4,7 +4,7 @@ beforeEach(() => {
 });
 
 
-    it('001 - Deve realizar login com credenciais válidas', () => {
+    it.only('001 - Deve realizar login com credenciais válidas', () => {
         cy.get('#username').type('practice'); 
         cy.get('#password').type('SuperSecretPassword!'); 
         cy.get('button[type="submit"]').click();
