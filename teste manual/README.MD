@@ -42,25 +42,29 @@
 ### RESULTADO ESPERADO:
 - Mensagem de erro exibida: Your password is invalid!
 
-## (ID 003) - LOGIN COM USUARIO VAZIO
-
 ### EVIDENCIA
 ![LOGIN COM SENHA INVÁLIDA](prints/002.png)
-##PASSOS:
-1 - Acessar a página de login https://practice.expandtesting.com/login
-2 - Informar usuário: vazio
-2 - Password: SuperSecretPassword!
 
-RESULTADO ESPERADO:
-1 - Mensagem de erro exibida: Your username is invalid!
+## (ID 003) - LOGIN COM USUARIO VAZIO
 
-(ID 004) - LOGIN COM A SENHA VAZIA
+## PASSOS:
+- Acessar a página de login https://practice.expandtesting.com/login
+- Informar usuário: vazio
+- Password: SuperSecretPassword!
 
-PASSOS:
-1 - Acessar a página de login https://practice.expandtesting.com/login
-2 - Informar usuário: practice
-2 - Password: vazio
+## RESULTADO ESPERADO:
+- Mensagem de erro exibida: Your username is invalid!
 
-RESULTADO ESPERADO:
-1 - Mensagem de erro exibida: Your password is invalid!
+### EVIDENCIA
+![LOGIN COM USUARIO VAZIO](prints/003.png)
+
+## (ID 004) - LOGIN COM A SENHA VAZIA
+
+### PASSOS:
+- Acessar a página de login https://practice.expandtesting.com/login
+- Informar usuário: practice
+- Password: vazio
+
+### RESULTADO ESPERADO:
+- Mensagem de erro exibida: Your password is invalid!
 
