@@ -11,7 +11,7 @@ beforeEach(() => {
         cy.contains('You logged into a secure area!').should('be.visible') //| Passou |
     });
 
-    it.only('002 - login com senha invalida', () => {
+    it('002 - login com senha invalida', () => {
         cy.get('#username').type('practice'); 
         cy.get('#password').type('SuperSecretPassword'); // sem colocar ! no final
         cy.get('button[type="submit"]').click();
@@ -26,7 +26,7 @@ beforeEach(() => {
         cy.contains('Your username is invalid!').should('be.visible')//| Passou |
     });
 
-    it('004 - Login com senha vazia', () => {
+    it.only('004 - Login com senha vazia', () => {
         cy.get('#username').type('practice'); 
         cy.get('#password').clear(); 
         cy.get('button[type="submit"]').click();
