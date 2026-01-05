@@ -8,8 +8,8 @@
  - Clicar em "Login"
 
 ### DADOS DE TESTE:
-1 - Username: practice
-2 - Password: SuperSecretPassword!
+1  - Username: practice
+2  - Password: SuperSecretPassword!
 
 ### RESULTADO ESPERADO:
 1 - Usuário é autenticado com sucesso
