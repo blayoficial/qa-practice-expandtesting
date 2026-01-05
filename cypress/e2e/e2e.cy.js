@@ -77,7 +77,7 @@ beforeEach(() => {
         cy.contains('Please select the Paymeny Method.').should('be.visible') //| Passou | 
     });
 
-    it('010 - Envio com dados válidos ', () => {
+    it.only('010 - Envio com dados válidos ', () => {
         cy.get('#validationCustom01').clear().type('Blay')
         cy.get('#validationCustom05').clear().type('013-3456789')
         cy.get('[name="pickupdate"]').clear().type('1212-02-12')
