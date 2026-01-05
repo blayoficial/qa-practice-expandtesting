@@ -26,7 +26,7 @@ beforeEach(() => {
         cy.contains('Your username is invalid!').should('be.visible')//| Passou |
     });
 
-    it.only('004 - Login com senha vazia', () => {
+    it('004 - Login com senha vazia', () => {
         cy.get('#username').type('practice'); 
         cy.get('#password').clear(); 
         cy.get('button[type="submit"]').click();
@@ -47,7 +47,7 @@ beforeEach(() => {
         cy.contains('Your username is invalid!').should('be.visible')//| Passou |     
     });
 
-    it('007 - Logout do sistema', () => {
+    it.only('007 - Logout do sistema', () => {
         cy.get('#username').type('practice'); 
         cy.get('#password').type('SuperSecretPassword!'); 
         cy.get('button[type="submit"]').click();
