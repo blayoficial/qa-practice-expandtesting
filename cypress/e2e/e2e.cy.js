@@ -141,7 +141,7 @@ beforeEach(() => {
         cy.contains(' Register ').click()
         cy.contains('Thank you for validating your ticket').should('be.visible')
    });
-   it.only('018 - Teste de limite de caracteres no nome', () => {
+   it('018 - Teste de limite de caracteres no nome', () => {
     cy.get('#validationCustom01').clear().type('Blay@#$##@@!:')
         cy.get('#validationCustom05').clear().type('012-3456789')
         cy.get('[name="pickupdate"]').clear().type('1212-02-12')
