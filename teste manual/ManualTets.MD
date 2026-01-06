@@ -145,4 +145,62 @@ Login realizado com sucesso: You logged into a secure area!
 ### EVIDENCIA:
 ![](prints/010.png)
 
+## (ID 011) - Validação de campo obrigatório/número inválido
 
+### PASSOS
+- Acessar a pagina de Formulario https://practice.expandtesting.com/form-validation
+- Informar o Contact Name :Blay
+- Informar o Contact number: 013-34567
+- Informar o PickUp Date: 1212-02-12
+- Informar o Payment Method: card
+- Click em Register
+
+### RESULTADO ESPERADO: Please provide your Contact number.
+
+### EVIDENCIA 
+![](prints/011.png)
+
+## (ID 012) - Número de contato vazio
+
+### PASSOS 
+- Acessar a pagina de Formulario https://practice.expandtesting.com/form-validation
+- Informar o Contact Name :Blay
+- Informar o Contact number:
+- Informar o PickUp Date: 1212-02-12
+- Informar o Payment Method: card
+- Click em Register
+
+### RESULTADO ESPERADO: Please provide your Contact number.
+
+### EVIDENCIA
+![](print/012.png)
+
+## (ID 013) - Número de contato com menos dígitos
+
+### PASSOS 
+- Acessar a pagina de Formulario https://practice.expandtesting.com/form-validation
+- Informar o Contact Name :Blay
+- Informar o Contact number: 013-34567
+- Informar o PickUp Date: 1212-02-12
+- Informar o Payment Method: card
+- Click em Register
+
+### RESULTADO ESPERADO: Please provide your Contact number.
+
+### EVIDENCIA
+![](print/013.png)
+
+## (ID 014) - Número de contato com letras ou caracteres especiais
+
+### PASSOS
+- Acessar a pagina de Formulario https://practice.expandtesting.com/form-validation
+- Informar o Contact Name :Blay
+- Informar o Contact number: 012-345678@!
+- Informar o PickUp Date: 1212-02-12
+- Informar o Payment Method: card
+- Click em Register
+
+### RESULTADO ESPERADO: Please provide your Contact number
+
+### EVIDENCIA
+![](print/014.png)
