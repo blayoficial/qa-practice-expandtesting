@@ -33,11 +33,15 @@ Login realizado com sucesso: You logged into a secure area!
 - Username: practice
 - Password: Senha errada
 
-### RESULTADO ESPERADO:
-- Mensagem de erro exibida: Your password is invalid!
+### RESULTADO ESPERADO: deve aparecer a seguinte mensagem!
+- Your password is invalid!
+
+### RESULTADO OBTIDO:
+- Your password is invalid!
 
 ### EVIDENCIA:
 ![](prints/002.png)
+
 ## (ID 003) - LOGIN COM USUARIO VAZIO
 
 ### PASSOS:
@@ -45,8 +49,11 @@ Login realizado com sucesso: You logged into a secure area!
 - Informar usuário: vazio
 - Password: SuperSecretPassword!
 
-### RESULTADO ESPERADO:
+### RESULTADO ESPERADO: deve aparecer a seguinte mensagem!
 - Mensagem de erro exibida: Your username is invalid!
+
+### RESULTADO OBTIDO:
+- Your username is invalid!
 
 ### EVIDENCIA:
 ![](prints/003.png)
@@ -58,8 +65,11 @@ Login realizado com sucesso: You logged into a secure area!
 - Informar usuário: practice
 - Password: vazio
 
-### RESULTADO ESPERADO:
+### RESULTADO ESPERADO: deve aparecer a seguinte mensagem!
 - Mensagem de erro exibida: Your password is invalid!
+
+### RESULTADO OBTIDO:
+- Your password is invalid!
 
 ### EVIDENCIA:
 ![](prints/004.png)
@@ -71,8 +81,11 @@ Login realizado com sucesso: You logged into a secure area!
 - informar usuário: vazio
 - password: vazio
 
-### RESULTADO ESPERADO:
+### RESULTADO ESPERADO: deve aparecer a seguinte mensagem!
 - Mensagem de erro exibida: Your username is invalid!
+
+### RESULTADO OBTIDO:
+- Your username is invalid!
 
 ### EVIDENCIA:
 ![](prints/005.png)
@@ -84,8 +97,12 @@ Login realizado com sucesso: You logged into a secure area!
 - informar usuário: !@#$% 
 - password: ^&*()
 
-### RESULTADO ESPERADO:
-- Mensagem de erro exibida: Your username is invalid!
+### RESULTADO ESPERADO: deve aparecer a seguinte mensagem!
+- Mensagem de erro exibida: Your username is invalid!,Your username is invalid!
+
+### RESULTADO OBTIDO:
+- Your password is invalid!
+- Your username is invalid!
 
 ### EVIDENCIA:
 ![](prints/006.png)
@@ -97,8 +114,13 @@ Login realizado com sucesso: You logged into a secure area!
 - informar usuário: practice 
 - password: SuperSecretPassword!
 
-### RESULTADO ESPERADO:
+### RESULTADO ESPERADO: deve aparecer a seguinte mensagem!
 - Mensagem de erro exibida: You logged out of the secure area!
+
+### RESULTADO OBTIDO:
+- You logged out of the secure area!
+
+
 
 ### EVIDENCIA:
 ![](prints/007.png)
@@ -108,8 +130,11 @@ Login realizado com sucesso: You logged into a secure area!
 ### PASSOS:
 - Acessar a página de login https://practice.expandtesting.com/secure
 
-### RESULTADO ESPERADO:
+### RESULTADO ESPERADO: deve aparecer a seguinte mensagem!
 - Mensagem de erro exibida: You must login to view the secure area!
+
+### RESULTADO OBTIDO:
+- You must login to view the secure area!
 
 ### EVIDENCIA:
 ![](prints/008.png)
@@ -124,8 +149,19 @@ Login realizado com sucesso: You logged into a secure area!
 - Informar o Payment Method: Vazio
 - Click em Register
 
-### RESULTADO ESPERADO:
-- Mensagem de erro exibida: Please enter your Contact name. , Please provide your Contact number. , Please provide valid Date. , Please select the Paymeny Method. 
+### RESULTADO ESPERADO: deve aparecer as seguintes mensagem!
+- Mensagem de erro exibida: 
+- Please enter your Contact name. 
+- Please provide your Contact number. 
+- Please provide valid Date. 
+- Please select the Paymeny Method. 
+
+### RESULTADO OBTIDO:
+- Mensagem de erro exibida: 
+- Please enter your Contact name. 
+- Please provide your Contact number. 
+- Please provide valid Date. 
+- Please select the Paymeny Method.
 
 ### EVIDENCIA:
 ![](prints/009.png)
@@ -140,7 +176,11 @@ Login realizado com sucesso: You logged into a secure area!
 - Informar o Payment Method: card
 - Click em Register
 
-### RESULTADO ESPERADO: Thank you for validating your ticket
+### RESULTADO ESPERADO: deve aparecer a seguinte mensagem!
+- Thank you for validating your ticket
+
+### RESULTADO OBTIDO:
+- Thank you for validating your ticket
 
 ### EVIDENCIA:
 ![](prints/010.png)
@@ -155,7 +195,11 @@ Login realizado com sucesso: You logged into a secure area!
 - Informar o Payment Method: card
 - Click em Register
 
-### RESULTADO ESPERADO: Please provide your Contact number.
+### RESULTADO ESPERADO: deve aparecer a seguinte mensagem!
+- Please provide your Contact number.
+
+### RESULTADO OBTIDO:
+- Please provide your Contact number.
 
 ### EVIDENCIA 
 ![](prints/011.png)
@@ -170,10 +214,14 @@ Login realizado com sucesso: You logged into a secure area!
 - Informar o Payment Method: card
 - Click em Register
 
-### RESULTADO ESPERADO: Please provide your Contact number.
+### RESULTADO ESPERADO: deve aparecer a seguinte mensagem!
+- Please provide your Contact number.
+
+### RESULTADO OBTIDO:
+- Please provide your Contact number.
 
 ### EVIDENCIA
-![](print/012.png)
+![](prints/012.png)
 
 ## (ID 013) - Número de contato com menos dígitos
 
@@ -185,10 +233,14 @@ Login realizado com sucesso: You logged into a secure area!
 - Informar o Payment Method: card
 - Click em Register
 
-### RESULTADO ESPERADO: Please provide your Contact number.
+### RESULTADO ESPERADO: deve aparecer a seguinte mensagem!
+- Please provide your Contact number.
+
+### RESULTADO OBTIDO:
+- Please provide your Contact number.
 
 ### EVIDENCIA
-![](print/013.png)
+![](prints/013.png)
 
 ## (ID 014) - Número de contato com letras ou caracteres especiais
 
@@ -200,7 +252,29 @@ Login realizado com sucesso: You logged into a secure area!
 - Informar o Payment Method: card
 - Click em Register
 
-### RESULTADO ESPERADO: Please provide your Contact number
+### RESULTADO ESPERADO: deve aparecer a seguinte mensagem! 
+- Please provide your Contact number
+
+### RESULTADO OBTIDO:
+- Please provide your Contact number
 
 ### EVIDENCIA
-![](print/014.png)
+![](prints/014.png)
+
+## (ID 015) - Data de retirada em formato inválido
+- Acessar a pagina de Formulario https://practice.expandtesting.com/form-validation
+- Informar o Contact Name :Blay
+- Informar o Contact number: 012-3456789
+- Informar o PickUp Date: 1212-02-12
+- Informar o Payment Method: card
+- Click em Register
+
+### RESULTADO ESPERADO: O sistema não deve permitir o envio do formulário quando o campo PickUp Date estiver em um formato de data inválido.
+
+### RESULTADO OBTIDO
+- O sistema permite o envio do formulário mesmo quando o campo PickUp Date é preenchido com valores inválidos exmplo 12-02-123123 
+
+### EVIDENCIA
+![](prints/015.png)
+### EVIDENCIA 02
+![](prints/015v2.png)
