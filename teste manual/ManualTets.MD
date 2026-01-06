@@ -120,8 +120,6 @@ Login realizado com sucesso: You logged into a secure area!
 ### RESULTADO OBTIDO:
 - You logged out of the secure area!
 
-
-
 ### EVIDENCIA:
 ![](prints/007.png)
 
