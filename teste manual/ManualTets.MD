@@ -98,7 +98,7 @@ Login realizado com sucesso: You logged into a secure area!
 - password: SuperSecretPassword!
 
 ### RESULTADO ESPERADO:
-- Mensagem de erro exibida: You logged out of the secure area!
+- Deve passar e exibir a mensagem : You logged out of the secure area!
 
 ### EVIDENCIA:
 ![](prints/007.png)
