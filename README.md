@@ -19,7 +19,7 @@ com foco em testes funcionais e validação de fluxos críticos.
 - Validação de fluxos principais
 - Testes positivos e negativos
 
-## ▶️ Como executar os testes
+## ▶️ Como executar os testes automatizados
 
 1. Instale as dependências do projeto:
    npm install
