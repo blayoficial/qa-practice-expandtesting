@@ -260,14 +260,17 @@ Login realizado com sucesso: You logged into a secure area!
 ![](prints/014.png)
 
 ## (ID 015) - Data de retirada em formato inválido
+
+### PASSOS
 - Acessar a pagina de Formulario https://practice.expandtesting.com/form-validation
 - Informar o Contact Name :Blay
 - Informar o Contact number: 012-3456789
-- Informar o PickUp Date: 1212-02-12
+- Informar o PickUp Date: 123123-02-12
 - Informar o Payment Method: card
 - Click em Register
 
-### RESULTADO ESPERADO: O sistema não deve permitir o envio do formulário quando o campo PickUp Date estiver em um formato de data inválido.
+### RESULTADO ESPERADO: 
+- O sistema não deve permitir o envio do formulário quando o campo PickUp Date estiver em um formato de data inválido.
 
 ### RESULTADO OBTIDO
 - O sistema permite o envio do formulário mesmo quando o campo PickUp Date é preenchido com valores inválidos exmplo 12-02-123123 
@@ -276,3 +279,64 @@ Login realizado com sucesso: You logged into a secure area!
 ![](prints/015.png)
 ### EVIDENCIA 02
 ![](prints/015v2.png)
+
+## (ID 016) - Método de pagamento não selecionado
+
+### PASSOS
+- Acessar a pagina de Formulario https://practice.expandtesting.com/form-validation
+- Informar o Contact Name :Blay
+- Informar o Contact number: 012-3456789
+- Informar o PickUp Date: 1212-02-12
+- Informar o Payment Method: não selecionar nada
+- Click em Register
+
+### RESULTADO ESPERADO: deve aparecer a seguinte mensagem!
+- Please select the Paymeny Method.
+
+### RESULTADO OBTIDO:
+- Please select the Paymeny Method.
+
+### EVIDENCIA:
+![](prints/016.png)
+
+## (ID 017) - Preenchimento correto de todos os campos
+
+### PASSOS
+- Acessar a pagina de Formulario https://practice.expandtesting.com/form-validation
+- Informar o Contact Name : Blay
+- Informar o Contact number: 012-3456789
+- Informar o PickUp Date: 1212-02-12
+- Informar o Payment Method: card
+- Click em Register
+
+### RESULTADO ESPERADO: Deve aparecer a seguinte mensagem!
+- Thank you for validating your ticket
+- URL DE CONFIRMAÇÃO https://practice.expandtesting.com/form-confirmation
+
+### RESULTADO OBTIDO: 
+- Thank you for validating your ticket
+- https://practice.expandtesting.com/form-confirmation
+
+### EVIDENCIA:
+![](prints/017.png)
+
+## (ID 018) - Teste de limite de caracteres no nome 
+
+### PASSOS
+- Acessar a pagina de Formulario https://practice.expandtesting.com/form-validation
+- Informar o Contact Name : Blay@#$##@@!:
+- Informar o Contact number: 012-3456789
+- Informar o PickUp Date: 1212-02-12
+- Informar o Payment Method: card
+- Click em Register
+
+### RESULTADO ESPERADO: O sistema deve exibir mensagem de erro informando que o campo"Contact Name" aceita apenas letras e números, não permitindo caracteres especiais.
+
+### RESULTADO OBTIDO: 
+- O sistema permitiu o envio do formulário com o campo "Contact Name"
+preenchido com diversos caracteres especiais, sem exibir qualquer
+mensagem de erro ou validação ao usuário.
+
+### EVIDENCIA:
+![](prints/018v2bug.png)
+![](prints/018.png)

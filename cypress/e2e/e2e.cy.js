@@ -110,7 +110,7 @@ beforeEach(() => {
         cy.contains(' Register ').click()
         cy.contains('Please provide your Contact number.').should('be.visible') 
     });
-    it.only('014 - Número de contato com letras ou caracteres especiais', () => {
+    it('014 - Número de contato com letras ou caracteres especiais', () => {
         cy.get('#validationCustom01').clear().type('Blay')
         cy.get('#validationCustom05').type('012-345678@!')
         cy.get('[name="pickupdate"]').clear().type('1212-02-12')
