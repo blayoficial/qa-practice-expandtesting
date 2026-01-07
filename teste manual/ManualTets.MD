@@ -18,6 +18,8 @@
 ### RESULTADO OBTIDO:
 Login realizado com sucesso: You logged into a secure area!
 
+# PASSOU 🟢
+
 ### EVIDENCIA:
 ![](prints/001.png)
 
@@ -39,6 +41,8 @@ Login realizado com sucesso: You logged into a secure area!
 ### RESULTADO OBTIDO:
 - Your password is invalid!
 
+# PASSOU 🟢
+
 ### EVIDENCIA:
 ![](prints/002.png)
 
@@ -54,6 +58,8 @@ Login realizado com sucesso: You logged into a secure area!
 
 ### RESULTADO OBTIDO:
 - Your username is invalid!
+
+# PASSOU 🟢
 
 ### EVIDENCIA:
 ![](prints/003.png)
@@ -71,6 +77,8 @@ Login realizado com sucesso: You logged into a secure area!
 ### RESULTADO OBTIDO:
 - Your password is invalid!
 
+# PASSOU 🟢
+
 ### EVIDENCIA:
 ![](prints/004.png)
 
@@ -86,6 +94,8 @@ Login realizado com sucesso: You logged into a secure area!
 
 ### RESULTADO OBTIDO:
 - Your username is invalid!
+
+# PASSOU 🟢
 
 ### EVIDENCIA:
 ![](prints/005.png)
@@ -104,6 +114,8 @@ Login realizado com sucesso: You logged into a secure area!
 - Your password is invalid!
 - Your username is invalid!
 
+# PASSOU 🟢
+
 ### EVIDENCIA:
 ![](prints/006.png)
 
@@ -120,6 +132,8 @@ Login realizado com sucesso: You logged into a secure area!
 ### RESULTADO OBTIDO:
 - You logged out of the secure area!
 
+# PASSOU 🟢
+
 ### EVIDENCIA:
 ![](prints/007.png)
 
@@ -133,6 +147,8 @@ Login realizado com sucesso: You logged into a secure area!
 
 ### RESULTADO OBTIDO:
 - You must login to view the secure area!
+
+# PASSOU 🟢
 
 ### EVIDENCIA:
 ![](prints/008.png)
@@ -161,6 +177,8 @@ Login realizado com sucesso: You logged into a secure area!
 - Please provide valid Date. 
 - Please select the Paymeny Method.
 
+# PASSOU 🟢
+
 ### EVIDENCIA:
 ![](prints/009.png)
 
@@ -179,6 +197,8 @@ Login realizado com sucesso: You logged into a secure area!
 
 ### RESULTADO OBTIDO:
 - Thank you for validating your ticket
+
+# PASSOU 🟢
 
 ### EVIDENCIA:
 ![](prints/010.png)
@@ -199,6 +219,8 @@ Login realizado com sucesso: You logged into a secure area!
 ### RESULTADO OBTIDO:
 - Please provide your Contact number.
 
+# PASSOU 🟢
+
 ### EVIDENCIA 
 ![](prints/011.png)
 
@@ -217,6 +239,8 @@ Login realizado com sucesso: You logged into a secure area!
 
 ### RESULTADO OBTIDO:
 - Please provide your Contact number.
+
+# PASSOU 🟢
 
 ### EVIDENCIA
 ![](prints/012.png)
@@ -237,6 +261,8 @@ Login realizado com sucesso: You logged into a secure area!
 ### RESULTADO OBTIDO:
 - Please provide your Contact number.
 
+# PASSOU 🟢
+
 ### EVIDENCIA
 ![](prints/013.png)
 
@@ -255,6 +281,8 @@ Login realizado com sucesso: You logged into a secure area!
 
 ### RESULTADO OBTIDO:
 - Please provide your Contact number
+
+# PASSOU 🟢
 
 ### EVIDENCIA
 ![](prints/014.png)
@@ -275,10 +303,19 @@ Login realizado com sucesso: You logged into a secure area!
 ### RESULTADO OBTIDO
 - O sistema permite o envio do formulário mesmo quando o campo PickUp Date é preenchido com valores inválidos exmplo 12-02-123123 
 
-### EVIDENCIA
-![](prints/015.png)
+# NÃO PASSOU 🚫
+
+### EVIDENCIA 01
+- Bug no cypress.
+![](prints/015bug.png)
 ### EVIDENCIA 02
-![](prints/015v2.png)
+- Fui olhar se passava no manual ... PASSOU NO MANUAL
+![](prints/015bug.2.png)
+### EVIDENCIA 03
+- passou como se nada tivesse acontecido!
+![](prints/015bug.3.png)
+
+
 
 ## (ID 016) - Método de pagamento não selecionado
 
@@ -295,6 +332,8 @@ Login realizado com sucesso: You logged into a secure area!
 
 ### RESULTADO OBTIDO:
 - Please select the Paymeny Method.
+
+# PASSOU 🟢
 
 ### EVIDENCIA:
 ![](prints/016.png)
@@ -317,6 +356,8 @@ Login realizado com sucesso: You logged into a secure area!
 - Thank you for validating your ticket
 - https://practice.expandtesting.com/form-confirmation
 
+# PASSOU 🟢
+
 ### EVIDENCIA:
 ![](prints/017.png)
 
@@ -336,6 +377,8 @@ Login realizado com sucesso: You logged into a secure area!
 - O sistema permitiu o envio do formulário com o campo "Contact Name"
 preenchido com diversos caracteres especiais, sem exibir qualquer
 mensagem de erro ou validação ao usuário.
+
+# NÃO PASSOU 🚫
 
 ### EVIDENCIA:
 ![](prints/018v2bug.png)
